@@ -1,0 +1,32 @@
+{
+  "name": "tic-tac-toe-ai-library",
+  "version": "1.0.0",
+  "description": "my library",
+  "keywords": [
+    "tic-tac-toe",
+    "game",
+    "ai"
+  ],
+  "homepage": "https://github.com/zayaizraya17/tic-tac-toe-library#readme",
+  "bugs": {
+    "url": "https://github.com/zayaizraya17/tic-tac-toe-library/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zayaizraya17/tic-tac-toe-library.git"
+  },
+  "license": "ISC",
+  "author": "kiradolgaya",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src/ tests/",
+    "build": "echo 'No build step required for pure JS'",
+    "prepublishOnly": "npm run lint && npm test"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "jest": "^30.2.0"
+  }
+}
