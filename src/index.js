@@ -46,7 +46,7 @@ function getOptimalTurn(gameField, player) {
   }
   
   // 3. Simple strategy: take center, then corners, then edges
-  const movePriority = [4, 0, 2, 6, 8, 1, 3, 5, 7];
+const movePriority = [4, 0, 2, 6, 5, 8, 1, 3, 7];
   for (const move of movePriority) {
     if (gameField[move] === -1) {
       return move;
