@@ -1,5 +1,5 @@
 {
-  "name": "tic-tac-toe-ai-library",
+  "name": "tac-toe-ai-library",
   "version": "1.0.0",
   "description": "my library",
   "keywords": [
@@ -17,7 +17,7 @@
   },
   "license": "ISC",
   "author": "kiradolgaya",
-    "type": "module",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "test": "jest",

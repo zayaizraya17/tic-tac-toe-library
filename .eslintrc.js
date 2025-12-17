@@ -1,19 +1,21 @@
 module.exports = {
   env: {
-    browser: true,
-    es2021: true,
     node: true,
+    es2021: true,
     jest: true
   },
   extends: 'eslint:recommended',
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'script' // Используйте 'script' для CommonJS
   },
   rules: {
-    indent: ['error', 2],
-    'linebreak-style': 'off', // ОТКЛЮЧАЕМ проверку переноса строк
-    quotes: ['error', 'single'],
-    semi: ['error', 'always']
+    'indent': ['error', 2],
+    'no-unused-vars': ['error', { 
+      'vars': 'all',
+      'args': 'after-used',
+      'ignoreRestSiblings': false,
+      'varsIgnorePattern': '^_'
+    }]
   }
 };
